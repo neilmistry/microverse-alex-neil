@@ -14,9 +14,9 @@
 
     <form id="survey-form">
       <label id="name-label" for="name"> Name </label>
-      <input type="text" id="name" name="name" placeholder="What is your name?"><br>
+      <input type="text" id="name" name="name" placeholder="What is your name?" required><br>
       <label id="email-label" for="email"> Email </label>
-      <input type="email" id="email" name="emailaddress" placeholder="What is your email?"><br>
+      <input type="email" id="email" name="emailaddress" placeholder="What is your email?" required><br>
       <label id="number-label" for="birthyear"> Birthyear </label>
       <input type="number" id="number" name="birthyear" placeholder="Which year were you born in?" min="1900" max="2019"><br>
       <label id="gender-label" for="gender"> Gender </label>
@@ -33,7 +33,10 @@
       <input type="checkbox" name="pizza" value="Pizza"> Pizza<br>
       <input type="checkbox" name="pasta" value="Pasta"> Pasta<br>
 
-      <input type="submit" value="Submit">
+      <label id="textarea-label" for="comment"> Comments: </label><br>
+      <textarea rows = "5" cols = "50" name = "comment" placeholder="Please leave any additional comments here."></textarea>
+
+      <input type="submit" value="Submit" id="submit">
     </form>
 
     <script  src="js/index.js"></script>
