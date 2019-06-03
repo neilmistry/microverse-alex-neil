@@ -14,12 +14,24 @@
 
     <form id="survey-form">
       <label id="name-label" for="name"> Name </label>
-      <input type="text" id="name" name="name" placeholder="name"><br>
-      <label id="name-email" for="email"> Email </label>
-      <input type="email" id="email" name="emailaddress" placeholder="email"><br>
-      <label id="name-number" for="birthyear"> Birthyear </label>
-      <input type="number" id="number" name="birthyear" placeholder="birthyear" min="1900" max="2019"><br>
-
+      <input type="text" id="name" name="name" placeholder="What is your name?"><br>
+      <label id="email-label" for="email"> Email </label>
+      <input type="email" id="email" name="emailaddress" placeholder="What is your email?"><br>
+      <label id="number-label" for="birthyear"> Birthyear </label>
+      <input type="number" id="number" name="birthyear" placeholder="Which year were you born in?" min="1900" max="2019"><br>
+      <label id="gender-label" for="gender"> Gender </label>
+      <select name="dropdown" size="1" id="dropdown">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select><br>
+      <label id="eyeColor-label" for="eyeColor"> Eye Color: </label><br>
+      <input type="radio" name="eyecolor" value="Blue"> Blue<br>
+      <input type="radio" name="eyecolor" value="Brown"> Brown<br>
+      <input type="radio" name="eyecolor" value="Green"> Green<br>
+      <label id="food-label" for="eyeColor"> Favorite foods: </label><br>
+      <input type="checkbox" name="lasagna" value="Lasagna"> Lasagna<br>
+      <input type="checkbox" name="pizza" value="Pizza"> Pizza<br>
+      <input type="checkbox" name="pasta" value="Pasta"> Pasta<br>
 
       <input type="submit" value="Submit">
     </form>
