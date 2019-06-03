@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nopadding {
+    padding: 0px;
+    margin: 0px;
+}
+
+#surveyContainer {
+    background-color: #d3d3d3;
+    max-width: 400px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+input, select {
+    margin: 3px;
+    display: inline-block;
+}
+
+.labelClass {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}

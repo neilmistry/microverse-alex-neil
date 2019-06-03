@@ -8,7 +8,7 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<div id="surveyContainer">
     <h1 id="title">Survey</h1>
     <p id="description">This is a survey</p>
 
@@ -18,27 +18,27 @@
       <label id="email-label" for="email"> Email </label>
       <input type="email" id="email" name="emailaddress" placeholder="What is your email?" required><br>
       <label id="number-label" for="birthyear"> Birthyear </label>
-      <input type="number" id="number" name="birthyear" placeholder="Which year were you born in?" min="1900" max="2019"><br>
+      <input type="number" id="number" name="birthyear" min="1900" max="2019"><br>
       <label id="gender-label" for="gender"> Gender </label>
       <select name="dropdown" size="1" id="dropdown">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select><br>
-      <label id="eyeColor-label" for="eyeColor"> Eye Color: </label><br>
-      <input type="radio" name="eyecolor" value="Blue"> Blue<br>
-      <input type="radio" name="eyecolor" value="Brown"> Brown<br>
-      <input type="radio" name="eyecolor" value="Green"> Green<br>
-      <label id="food-label" for="eyeColor"> Favorite foods: </label><br>
-      <input type="checkbox" name="lasagna" value="Lasagna"> Lasagna<br>
-      <input type="checkbox" name="pizza" value="Pizza"> Pizza<br>
-      <input type="checkbox" name="pasta" value="Pasta"> Pasta<br>
+      <label id="eyeColor-label" for="eyeColor" class="labelClass"> Eye Color: </label><br>
+      <input type="radio" name="eyecolor" value="Blue" class="nopadding"> Blue<br>
+      <input type="radio" name="eyecolor" value="Brown" class="nopadding"> Brown<br>
+      <input type="radio" name="eyecolor" value="Green" class="nopadding"> Green<br>
+      <label id="food-label" for="food" class="labelClass"> Favorite foods: </label><br>
+      <input type="checkbox" name="lasagna" value="Lasagna" class="nopadding"> Lasagna<br>
+      <input type="checkbox" name="pizza" value="Pizza" class="nopadding"> Pizza<br>
+      <input type="checkbox" name="pasta" value="Pasta" class="nopadding"> Pasta<br>
 
-      <label id="textarea-label" for="comment"> Comments: </label><br>
-      <textarea rows = "5" cols = "50" name = "comment" placeholder="Please leave any additional comments here."></textarea>
+      <label id="textarea-label" for="comment" class="labelClass"> Comments: </label><br>
+      <textarea rows = "5" cols = "50" name = "comment" placeholder="Please leave any additional comments here."></textarea><br>
 
       <input type="submit" value="Submit" id="submit">
     </form>
-
+</div>
     <script  src="js/index.js"></script>
   </body>
 </html>
